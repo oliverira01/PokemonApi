@@ -7,22 +7,39 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Pokedex</h1>
-    <div id="estadisticas">
-      <p>Estadisticas del pokemon</p>
-    </div>
-    <div id="sprites">
-      <p>Imagen del pokemon</p>
-      <img
-        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/737.png"
-      />
-    </div>
-    <div id="sonido">
-      <p>Sonido del pokemon</p>
-      <audio
-        controls
-        src="https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/737.ogg"
-      ></audio>
-    </div>
+    <div id="contenedor">
+      <div id="titulo">
+        <h1>Pokedex</h1>
+      </div>
+        <div id="buscador">
+          <input
+            type="text"
+            id="pokemonInput"
+            placeholder="Escribe un Pokémon"
+          />
+          <button id="buscarBtn">Buscar</button>
+        </div>
+      <div id="contenedor2">
+        <div id="estadisticas">
+          <p>Estadisticas del pokemon</p>
+          <ul id="stats"></ul>
+        </div>
+        <div id="sprite">
+          <p>Imagen del pokemon</p>
+          <img
+            id="sprite1" alt="imagen del pokemon"
+          />
+          <img id="sprite2" atl="imagen variocolor del pokemon"/>
+        </div>
+        <div id="sonido">
+          <p>Sonido del pokemon</p>
+          <audio
+            controls
+            id="ruido"
+          ></audio>
+        </div>
+      </div>
+      <script src="pokemon.js"></script>
+  </div>
   </body>
 </html>
